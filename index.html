@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Demo 2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="basic-demos.js" defer></script>
+  <!-- <script src="./script.js" defer></script> -->
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Javascript Functions and Conditionals</h1>
+      <p>This will be a focused step into working with functions and conditional logic. It should cover everything you
+        need to know for the 1st assignment (and more).</p>
+    </header>
+    <section>
+      <header>
+        <h2>Conditional Rendering</h2>
+        <p>Execute specific blocks of code depending on different conditions. <a
+            href="https://www.geeksforgeeks.org/javascript/conditional-statements-in-javascript/">Geeks for Geeks
+            Article</a>.</p>
+        <p>JS has 3 main different ways that you can write conditionals</p>
+        <ul>
+          <li>if/else/else if statements</li>
+          <li>switch statements</li>
+          <li>ternary operators (like an if/else shorthand)</li>
+        </ul>
+      </header>
+      <article>
+        <h3>
+          if else conditional
+        </h3>
+        <ol>
+          <li>Check a variable and render based on it</li>
+          <li>Create a toggle function that will switch the content based on the variable</li>
+          <li>create an else if condition</li>
+        </ol>
+        <div>
+          <h4>Demonstration 1</h4>
+          <p><strong>Time of day based greeting: </strong><span id="greeting-message-field"></span></p>
+        </div>
+        <div>
+          <h4>Demonstration 2</h4>
+          <p><strong>Advanced Pattern Object Lookup: </strong><span id="greeting-field"></span></p>
+        </div>
+        <div>
+          <h4>Demonstration 3</h4>
+          <p><strong>Interactive Pattern: Array Based Cycling: </strong><span id="greeting-field-interactive"></span>
+          </p>
+          <button id="cycle-time-button">Cycle Time of Day</button>
+        </div>
+      </article>
+      <article>
+        <h3>Ternary Operators</h3>
+        <p>These are just like if/else but it gives us a more elegant syntax</p>
+        <div>
+          <h4>Demonstration</h4>
+          <p>Is the user logged in? <span id="login-status"></span></p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>When to use each? <a
+          href="https://medium.com/@gecno/choosing-between-if-else-statements-and-ternary-operators-in-javascript-ba9449953fbf">Medium
+          Article</a></h3>
+      <h4>Use if else when</h4>
+      <ul>
+        <li>Dealing with complex conditions with multiple branches</li>
+        <li>Needing to execute more than 1 statement</li>
+        <li>Clarity is essential</li>
+      </ul>
+      <h4>Use Ternary when</h4>
+      <ul>
+        <li>Simple conditions that require 1 line actions</li>
+        <li>concise and clean code</li>
+      </ul>
+    </section>
+    </section>
+    <section>
+      <header>
+        <h2>Functions in Javascript</h2>
+        <p>Javascript has 2 ways of declaring functions, traditional notation and fat arrow notation</p>
+        <p>Use functions to wrap logic to make it reusable. They are great for avoiding mutations</p>
+      </header>
+      <article>
+        <h3>Traditional Notation</h3>
+        <code>
+          function calculateSomething () {
+            // enter code here
+          }
+        </code>
+      </article>
+      <article>
+        <h3>Fat Arrow Notation</h3>
+        <code>
+          const calculateSomething = () => {
+            // enter code here
+          }
+        </code>
+      </article>
+      <section>
+        <h3>Function Syntax Specifics</h3>
+        <ul></ul>
+        <li><strong>The return statement</strong> in a function is the output value. it's not necessary but is a good
+          idea to actually
+          return something.</li>
+        <li><strong>Function paremeter</strong>are the variables that you set up in the parentheses (). These are then
+          referred to in the function. They make the function more reusable</li>
+        <li><strong>Function argument</strong>are the arguments in use. when you run the function you'll pass
+          information into it that is then represented by the parameters</li>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
